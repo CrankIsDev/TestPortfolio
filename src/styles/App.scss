@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css?family=Josefin+Sans:400,600,700&display=swap");
-@import "./varibles.scss";
+@import "./variables.scss";
 @import "./breakpoints.scss";
 @import "./components/header.scss";
 @import "./components/banner.scss";
@@ -191,8 +191,25 @@ html {
           }
         }
       }
+      .case {
+        a {
+          font-weight: 700;
+          font-size: 25px;
+          color: $black;
+          text-decoration: none;
+        }
+        p {
+          font-size: 19px;
+          font-weight: 600;
+        }
+      }
     }
   }
+
+#unityContainer {
+  width: 960px; 
+  height: 600px
+}
 
 // test transition
 
