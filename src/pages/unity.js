@@ -6,7 +6,7 @@ const Game = () => {
       <div className="container">
         <div className="row">
         <div className="webgl-content">
-           <div id="unityContainer"></div>
+           <div id="unityContainer">Please if you see this message press F5.(I'm working for resolving this)</div>
         <div className="footer">
         <div className="webgl-logo"></div>
         <div className="title">Just Run</div>
@@ -14,8 +14,7 @@ const Game = () => {
     </div>
         </div>
     </div>
-  </div>
-   
+  </div>   
   );
 }
 

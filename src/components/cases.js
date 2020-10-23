@@ -11,9 +11,9 @@ const caseStudies = [
   },
   {
     id: 2,
-    subtitle: 'Test',
-    title: "For your best look ever",
-    img: "lumin-min"
+    subtitle: 'JustRun',
+    title: "Little Game created with Unity",
+    img: "just-run"
   },
   {
     id: 3,
