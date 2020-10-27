@@ -28,7 +28,7 @@ const transitionAnimation = (completeAnimation) => {
   })
 }
 
-const Game = () => {
+const Coming = () => {
 
   const [animationComplete, setAnimationComplete] = useState(false);
 
@@ -46,23 +46,29 @@ const Game = () => {
     <div className="page">
       <div className="container">
         <div className="row">
-        <h1>
+          <h1>
             <div className="about">
-              <span>Just Run</span>
+              <span>Coming Soon...</span>
             </div>
-        </h1>
-        <div className="webgl-content">
-           <div id="unityContainer">Please if you see this message press F5.(I'm working for resolving this)</div>
-        <div className="footer">
-        <div className="webgl-logo"></div>
-        <div className="title">Just Run</div>
+          </h1>
+          <div>
+            <p className="tune">Stay Tune</p>
+          </div>
+            <div className="lamp__wrap">
+              <div className="lamp">
+                <div className="cable"></div>
+                <div className="cover"></div>
+                <div className="in-cover">
+                <div className="bulb"></div>
+              </div>
+             <div className="light"></div>
+            </div>
+          </div>
+        </div>
       </div>
     </div>
-        </div>
-    </div>
-  </div>
-  </>
+    </>
   );
 }
 
-export default Game;
+export default Coming;

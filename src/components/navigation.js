@@ -22,8 +22,8 @@ const Navigation = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/projects" exact>
-                  Project3
+                <NavLink to="/coming-soon" exact>
+                  Coming Soon
                 </NavLink>
               </li>
               <li>

@@ -13,11 +13,7 @@ const transitionAnimation = (completeAnimation) => {
     stagger: {
       amount: 0.3
     }
-  }).to('.transition-right', 1.6, {
-    height: 0,
-    ease: 'expo.inOut',
-    stagger: 0.4
-  }).to('.transition-topLeft', 1.6, {
+  }).to('.transition-topLeft', 1, {
     width: 0,
     ease: 'expo.inOut',
     delay: -.8,
