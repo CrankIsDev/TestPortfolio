@@ -192,6 +192,26 @@ html {
         }
       }
       .case {
+        .case-image{
+          @include media('<=tablet') {
+            top: 0;
+            left: 0;
+            overflow: hidden;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+          } 
+          @include media('<=phone') {
+            top: 0;
+            left: 0;
+            overflow: hidden;
+          img {
+            height: 100%;
+            width: 100%;
+          }
+          }
+        }
         a {
           font-weight: 700;
           font-size: 25px;
@@ -207,8 +227,16 @@ html {
   }
 
 #unityContainer {
+  @include media('<=tablet') {
+    width: 90vw; 
+    height: 50vh;
+  }
+  @include media('<=phone') {
+    width: 90vw; 
+    height: 45vh;
+  }
   width: 960px; 
-  height: 600px
+  height: 600px;
 }
 
 // test transition

@@ -5,14 +5,14 @@ import { ReactComponent as CasesPrev } from '../assets/arrow-left.svg';
 const caseStudies = [
   {
     id: 1,
-    subtitle: "Tutoract",
-    title: "Apotheosis O'clock",
+    subtitle: "Apotheosis O'clock",
+    title: "Tutoract",
     img: "Tutoract"
   },
   {
     id: 2,
-    subtitle: 'JustRun',
-    title: "Little Game created with Unity",
+    subtitle: 'Little Game created with Unity',
+    title: "JustRun",
     img: "just-run"
   },
   {
@@ -45,7 +45,7 @@ const Cases = () => {
               <div className="case-image">
                 <img 
                   src={require(`../assets/${caseItem.img}.png`)} 
-                  alt={caseItem.title} />
+                  alt={caseItem.subtitle} />
               </div>
             </div>
           ))}
