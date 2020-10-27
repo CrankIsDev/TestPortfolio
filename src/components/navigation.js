@@ -22,7 +22,7 @@ const Navigation = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/" exact>
+                <NavLink to="/coming-soon" exact>
                   Coming Soon
                 </NavLink>
               </li>

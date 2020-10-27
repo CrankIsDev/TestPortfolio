@@ -17,9 +17,9 @@ const caseStudies = [
   },
   {
     id: 3,
-    subtitle: "Test2",
-    title: "On marque un truc au pif",
-    img: "yourspace-min"
+    subtitle: "Stay tune",
+    title: "Coming Soon",
+    img: "staytune"
   },
 ];
 
@@ -44,7 +44,7 @@ const Cases = () => {
               </div>
               <div className="case-image">
                 <img 
-                  src={require(`../assets/${caseItem.img}.png`)} 
+                  src={require(`../assets/${caseItem.img}.png`)}
                   alt={caseItem.subtitle} />
               </div>
             </div>
