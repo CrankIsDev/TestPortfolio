@@ -59,7 +59,7 @@ nav {
         }
         @include media('<=phone') {
           font-size: 0.875rem;
-          margin-bottom: 1.2rem;
+          margin-bottom: 0.5rem;
         }
       }
       .nav-links {
@@ -67,7 +67,7 @@ nav {
         margin: 0;
         li {
           list-style: none;
-          margin-bottom: 2.8rem;
+          margin-bottom: 1.8rem;
           @include media('<=phone') {
              margin-bottom: 1.6rem;
           }
@@ -112,6 +112,7 @@ nav {
             @include media('<=phone') {
               font-size: 1rem;
               margin-bottom: .0875rem;
+              margin-right: 0.5rem;
             }
             a {
               text-decoration: none;

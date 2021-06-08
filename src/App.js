@@ -7,13 +7,17 @@ import Navigation from "./components/navigation";
 
 //Pages
 import Home from "./pages/home";
-import Projects from './pages/projects';
+import Tutoract from './pages/tutoract';
 import About from './pages/about';
+import Game from './pages/unity';
+import Coming from './pages/coming';
 
 const routes = [
    {path: '/', name: 'Home', Component: Home},
-   {path: '/projects', name: 'Projects', Component: Projects},
+   {path: '/tutoract', name: 'Tutoract', Component: Tutoract},
    {path: '/about-me', name: 'About', Component: About},
+   {path: '/justRunGame', name: 'JustRunGame', Component: Game},
+   {path: '/coming-soon', name: 'Coming Soon', Component: Coming},
 ]
 
 function debounce(fn, ms) {
