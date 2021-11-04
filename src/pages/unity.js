@@ -1,4 +1,5 @@
 import React, {useEffect, useState} from 'react';
+import Unity, { UnityContext } from "react-unity-webgl";
 import gsap from 'gsap';
 import Transition from '../components/transition';
 
@@ -40,6 +41,13 @@ const Game = () => {
    transitionAnimation(completeAnimation);
  }, [])
 
+ const unityContext = new UnityContext({
+   loaderUrl: "./Build/JustRun2.loader.js",
+   dataUrl: "./Build/JustRun2.data",
+   frameworkUrl: "./Build/JustRun2.framework.js",
+   codeUrl: "./Build/JustRun2.wasm",
+ });
+
   return (
     <>
     {animationComplete === false ? <Transition /> : ""}
@@ -52,15 +60,18 @@ const Game = () => {
             </div>
         </h1>
         <div className="webgl-content">
-           <div id="unityContainer">Please if you see this message press F5.(I'm working for resolving this)</div>
-        <div className="footer">
-        <div className="webgl-logo"></div>
-        <div className="title">Just Run</div>
+          <Unity
+            unityContext={unityContext} 
+              style={{
+                width: "700px",
+                heigth: "400px",
+                border: "2px solid black",
+              }}
+            />
       </div>
     </div>
         </div>
     </div>
-  </div>
   </>
   );
 }

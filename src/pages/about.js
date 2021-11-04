@@ -47,15 +47,15 @@ const About = () => {
         <div className="row">
         <h3>
         <div className="about">
-          <span>Hey there ,</span>
+          <span>Qui suis-je :</span>
         </div>
         </h3>
         <div className="about">
-          <p>I'm a Junior Front-End Developer</p>
-          <p>Based near Paris (78)</p>
-          <p>I started coding at end of Summer (2019)</p>
-          <p>Was cooking for 14 years and decided to change my life cause i love to create and have funs with code</p>
-          <p>I'm also passionate about Cinema, Video-Games, Basket-Ball.</p>
+          <p>Je suis Developpeur Junior.</p>
+          <p>J'habite dans les Yvelines(78).</p>
+          <p>J'ai commencer a codé en 2019.</p>
+          <p>Je suis passionné aussi par le Cinema, les voyages, et pleins d'autres choses.</p>
+          <p>Et avant je faisait de la cuisine gastronomique.</p>
         </div> 
         </div>
       </div>
