@@ -31,10 +31,9 @@ const transitionAnimation = (completeAnimation) => {
 const projectImage = [
   {
     id: 1,
-    subtitle: "Apotheosis O'clock",
     title: "Tutoract",
     img: "Tutoract",
-    details: "One month of apotheosis, with Four Dev : Two Back-End, Two Front-End. Presentation on Youtube i explain the project (french)"
+    details: "Un mois d'Apothéose, Quatres développeurs : Deux Back-End, Deux Front-End."
   },
 ];
 
@@ -62,10 +61,8 @@ const Tutoract = () => {
               </div>
             </h3> 
             {projectImage.map((projectItem) => (
-            <div className="case" key={projectItem.id}>
-                <p>{projectItem.subtitle}</p>   
+            <div className="case" key={projectItem.id}>  
                 <p>{projectItem.details}</p>
-                <a href="https://www.youtube.com/watch?v=zgBx2B4Xwd4&feature=emb_title" target="_blank" rel="noopener noreferrer">Here for the Video</a>
               <div className="case-image">
                 <img 
                   src={require(`../assets/${projectItem.img}.png`)} 
