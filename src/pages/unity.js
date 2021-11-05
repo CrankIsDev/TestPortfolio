@@ -41,12 +41,14 @@ const Game = () => {
    transitionAnimation(completeAnimation);
  }, [])
 
- const unityContext = new UnityContext({
-   loaderUrl: "./Build/JustRun2.loader.js",
-   dataUrl: "./Build/JustRun2.data",
-   frameworkUrl: "./Build/JustRun2.framework.js",
-   codeUrl: "./Build/JustRun2.wasm",
- });
+
+const unityContext = new UnityContext({
+   loaderUrl: "./Build/JustRun3.loader.js",
+   dataUrl: "./Build/JustRun3.data",
+   frameworkUrl: "./Build/JustRun3.framework.js",
+   codeUrl: "./Build/JustRun3.wasm",
+ })
+
 
   return (
     <>
@@ -61,16 +63,11 @@ const Game = () => {
         </h1>
         <div className="webgl-content">
           <Unity
-            unityContext={unityContext} 
-              style={{
-                width: "700px",
-                heigth: "400px",
-                border: "2px solid black",
-              }}
+            unityContext={unityContext}
             />
-      </div>
-    </div>
         </div>
+      </div>
+      </div>
     </div>
   </>
   );
