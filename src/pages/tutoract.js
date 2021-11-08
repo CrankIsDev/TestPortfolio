@@ -35,6 +35,18 @@ const projectImage = [
     img: "Tutoract",
     details: "Un mois d'Apothéose, Quatres développeurs : Deux Back-End, Deux Front-End."
   },
+  {
+    id: 2,
+    title: "Tutoract",
+    img: "Inscription",
+    details: "Inscription"
+  },
+  {
+    id: 3,
+    title: "Tutoract",
+    img: "Profil2",
+    details: "Page de Profil"
+  },
 ];
 
 const Tutoract = () => {
@@ -59,17 +71,20 @@ const Tutoract = () => {
               <div className="about">
                 <span>Tutoract :</span>
               </div>
-            </h3> 
+            </h3>
+            <div className="case-tutoract">  
             {projectImage.map((projectItem) => (
-            <div className="case" key={projectItem.id}>  
-                <p>{projectItem.details}</p>
+              <div key={projectItem.id}>
+                  <p>{projectItem.details}</p>
               <div className="case-image">
                 <img 
                   src={require(`../assets/${projectItem.img}.png`)} 
-                  alt={projectItem.title} />
+                  alt={projectItem.title} 
+                />
               </div>
-            </div>
+              </div>
           ))}
+    </div>
     </div>
     </div>
     </div>

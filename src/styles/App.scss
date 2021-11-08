@@ -62,7 +62,7 @@ html {
   }
 }
 
-//overlay test
+//overlay
 
 .intro-overlay {
   .top {
@@ -132,6 +132,7 @@ html {
     }
   }
 }
+// Fin overlay
 .App {
   z-index: 2;
   transform: translateY(0);
@@ -233,8 +234,74 @@ html {
           }
         }
       }
+      .case-tutoract {
+        //width: 60%;
+       // margin-left: 20%;
+        display: flex;
+        justify-content: space-between;
+        .case-image {
+        img {
+        width: 400px;
+        height: auto;
+        }
+        @include media('<=tablet') {
+          top: 0;
+          left: 0;
+          overflow: hidden;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+        } 
+        @include media('<=phone') {
+          top: 0;
+          left: 0;
+          overflow: hidden;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+        }
+      }
+      }
+      .case-weather {
+        width: 60%;
+        margin-left: 20%;
+        display: flex;
+        justify-content: space-between;
+        .case-image {
+        img {
+        width: 300px;
+        height: 300px;
+        }
+        @include media('<=tablet') {
+          top: 0;
+          left: 0;
+          overflow: hidden;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+        } 
+        @include media('<=phone') {
+          top: 0;
+          left: 0;
+          overflow: hidden;
+        img {
+          height: 100%;
+          width: 100%;
+        }
+        }
+      }
+      }
       .case {
         .case-image{
+          img {
+          display: flex;
+          flex-direction: row;
+          width: 800px;
+          height: auto;
+        }
           @include media('<=tablet') {
             top: 0;
             left: 0;
@@ -264,22 +331,10 @@ html {
           font-size: 19px;
           font-weight: 600;
         }
+        
       }
     }
   }
-
-#unityContainer {
-  font-size: 20px;
-  font-weight: 700;
-  @include media('<=tablet') {
-    width: 90vw; 
-    height: 50vh;
-  }
-  @include media('<=phone') {
-    width: 90vw; 
-    height: 45vh;
-  }
-}
 
 // test transition
 

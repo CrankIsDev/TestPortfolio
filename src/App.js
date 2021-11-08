@@ -9,14 +9,14 @@ import Navigation from "./components/navigation";
 import Home from "./pages/home";
 import Tutoract from './pages/tutoract';
 import About from './pages/about';
-import Game from './pages/unity';
+import Weather from "./pages/weather";
 import Coming from './pages/coming';
 
 const routes = [
    {path: '/', name: 'Home', Component: Home},
    {path: '/tutoract', name: 'Tutoract', Component: Tutoract},
    {path: '/about-me', name: 'About', Component: About},
-   {path: '/justRunGame', name: 'JustRunGame', Component: Game},
+   {path: '/personnal-weather', name: 'Personnal Weather', Component: Weather},
    {path: '/coming-soon', name: 'Coming Soon', Component: Coming},
 ]
 

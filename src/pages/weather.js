@@ -1,5 +1,4 @@
 import React, {useEffect, useState} from 'react';
-import Unity, { UnityContext } from "react-unity-webgl";
 import gsap from 'gsap';
 import Transition from '../components/transition';
 
@@ -29,7 +28,22 @@ const transitionAnimation = (completeAnimation) => {
   })
 }
 
-const Game = () => {
+const personnalWeather = [
+  {
+    id: 1,
+    title: "Weather",
+    img: "Temperature",
+    details: "Projet Perso température par localisation."
+  },
+  {
+    id: 2,
+    title: "Weather",
+    img: "SWeather",
+    details: "Recherche par ville."
+  },
+];
+
+const Weather = () => {
 
   const [animationComplete, setAnimationComplete] = useState(false);
 
@@ -41,15 +55,6 @@ const Game = () => {
    transitionAnimation(completeAnimation);
  }, [])
 
-
-const unityContext = new UnityContext({
-   loaderUrl: "./Build/JustRun3.loader.js",
-   dataUrl: "./Build/JustRun3.data",
-   frameworkUrl: "./Build/JustRun3.framework.js",
-   codeUrl: "./Build/JustRun3.wasm",
- })
-
-
   return (
     <>
     {animationComplete === false ? <Transition /> : ""}
@@ -58,13 +63,21 @@ const unityContext = new UnityContext({
         <div className="row">
         <h1>
             <div className="about">
-              <span>Just Run</span>
+              <span>Personnal Weather :</span>
             </div>
         </h1>
-        <div className="webgl-content">
-          <Unity
-            unityContext={unityContext}
-            />
+        <div className="case-weather">
+        {personnalWeather.map((personnalItem) => (
+          <div key={personnalItem.id}>
+            <p>{personnalItem.details}</p>
+            <div className="case-image" key={personnalItem.id}>
+              <img 
+                src={require(`../assets/${personnalItem.img}.png`)}
+                alt={personnalItem.title}
+              />
+            </div>
+          </div>
+                ))}   
         </div>
       </div>
       </div>
@@ -73,4 +86,4 @@ const unityContext = new UnityContext({
   );
 }
 
-export default Game;
+export default Weather;

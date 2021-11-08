@@ -17,8 +17,8 @@ const Navigation = () => {
                 </NavLink>
               </li>
               <li>
-                <NavLink to="/justRunGame" exact>
-                  Just Run
+                <NavLink to="/personnal-weather" exact>
+                  Weather
                 </NavLink>
               </li>
               <li>
