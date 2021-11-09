@@ -33,7 +33,7 @@ const personnalWeather = [
     id: 1,
     title: "Weather",
     img: "Temperature",
-    details: "Projet Perso température par localisation."
+    details: "Température par localisation."
   },
   {
     id: 2,

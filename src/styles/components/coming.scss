@@ -10,7 +10,7 @@
   align-items: center;
   transform-origin: center top;
   animation-timing-function: cubic-bezier(0.6, 0, 0.38, 1);
-  animation: move 5.1s infinite;
+  //animation: move 5.1s infinite;
   @include media('<=tablet') {
 
   }
@@ -66,7 +66,7 @@
 .in-cover .bulb {
     width: 50px;
     height: 50px;
-    background-color: rgba(242,255,97,0.89);
+    background-color: rgba(240, 255, 73, 0.89);
     box-shadow: 0px 0px 28px 9px rgba(242,255,97,0.89);
     border-radius: 50%;
     position: absolute;
@@ -76,18 +76,18 @@
     margin: 0px auto;
 }
 .light {
-    width: 194px;
+    width: 190px;
     height: 0px;
-    border-bottom: 650px solid $black;
+    border-bottom: 650px solid rgba(255, 251, 211, 0.89); 
     border-left: 50px solid transparent;
     border-right: 50px solid transparent;
     position: absolute;
     left: 0px;
     right: 0px;
-    top: 270px;
+    top: 275px;
     margin: 0px auto;
     z-index: 1;
-    border-radius: 90px 90px 0px 0px;
+    border-radius: 0px 0px 0px 0px;
     @include media('<=tablet') {
 
     }

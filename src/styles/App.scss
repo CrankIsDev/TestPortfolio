@@ -133,6 +133,8 @@ html {
   }
 }
 // Fin overlay
+
+
 .App {
   z-index: 2;
   transform: translateY(0);
@@ -181,6 +183,7 @@ html {
           }
       }
     }
+
     .tune { 
       position: relative;
       text-align: center;
@@ -206,6 +209,7 @@ html {
         font-size: 1.7rem;
         line-height: 2.2rem;
       }
+
       .about {
         margin-bottom: 8px;
         height: 56px;
@@ -222,6 +226,7 @@ html {
           }
       }
       }
+
       .about {
         p {
           font-weight: 700;
@@ -235,10 +240,18 @@ html {
         }
       }
       .case-tutoract {
-        //width: 60%;
-       // margin-left: 20%;
         display: flex;
         justify-content: space-between;
+        a {
+          font-weight: 700;
+          font-size: 25px;
+          color: $black;
+          text-decoration: none;
+        }
+        p {
+          font-size: 20px;
+          font-weight: 600;
+        }
         .case-image {
         img {
         width: 400px;
@@ -269,6 +282,16 @@ html {
         margin-left: 20%;
         display: flex;
         justify-content: space-between;
+        a {
+          font-weight: 700;
+          font-size: 25px;
+          color: $black;
+          text-decoration: none;
+        }
+        p {
+          font-size: 25px;
+          font-weight: 600;
+        }
         .case-image {
         img {
         width: 300px;
@@ -328,7 +351,7 @@ html {
           text-decoration: none;
         }
         p {
-          font-size: 19px;
+          font-size: 25px;
           font-weight: 600;
         }
         

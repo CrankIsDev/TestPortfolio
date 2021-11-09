@@ -33,7 +33,7 @@ const projectImage = [
     id: 1,
     title: "Tutoract",
     img: "Tutoract",
-    details: "Un mois d'Apothéose, Quatres développeurs : Deux Back-End, Deux Front-End."
+    details: "Un mois d'Apothéose, Quatres développeurs."
   },
   {
     id: 2,

@@ -11,9 +11,9 @@ const caseStudies = [
   },
   {
     id: 2,
-    subtitle: 'Little Game created with Unity',
-    title: "JustRun",
-    img: "just-run"
+    subtitle: 'Température',
+    title: "Weather",
+    img: "SWeather"
   },
   {
     id: 3,
