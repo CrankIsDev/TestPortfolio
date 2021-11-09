@@ -7,21 +7,26 @@ const caseStudies = [
     id: 1,
     subtitle: "Apotheosis O'clock",
     title: "Tutoract",
-    img: "Tutoract"
+    img: "Tutoract",
+    url: "/tutoract"
   },
   {
     id: 2,
     subtitle: 'Température',
     title: "Weather",
-    img: "SWeather"
+    img: "SWeather",
+    url: "/personnal-weather"
   },
   {
     id: 3,
     subtitle: "Stay tune",
     title: "Coming Soon",
-    img: "staytune"
+    img: "staytune",
+    url: "/coming-soon"
   },
 ];
+
+
 
 const Cases = () => {
   return (
@@ -38,14 +43,17 @@ const Cases = () => {
         <div className="row">
           {caseStudies.map((caseItem) => (
             <div className="case" key={caseItem.id}>
+            <a href={caseItem.url}>
               <div className="case-details">
                 <span>{caseItem.subtitle}</span>
                 <h2>{caseItem.title}</h2>
               </div>
+            </a> 
               <div className="case-image">
                 <img 
                   src={require(`../assets/${caseItem.img}.png`)}
-                  alt={caseItem.subtitle} />
+                  alt={caseItem.subtitle}
+                />
               </div>
             </div>
           ))}

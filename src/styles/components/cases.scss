@@ -45,6 +45,9 @@
           opacity: 1.2;
         }
       }
+      a {
+          text-decoration: none;
+        }
       .case-details {
         width: 33.333vw;
         height: 50vh;
@@ -62,6 +65,7 @@
         @include media('<=phone') {
           padding: 16px;
         }
+        
         span {
           margin-top: 156px;
           font-size: 1.6rem;
